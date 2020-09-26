@@ -14,6 +14,13 @@
   display: flex;
   flex-direction: row;
 }
+.hdrInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 950px;
+}
 .hdr2 {
   display: flex;
   flex-direction: row;
@@ -21,6 +28,9 @@
   align-items: center;
   height: 30px;
   color: #5a0632;
+}
+.hdr2 .hdrInner{
+  width: 70vw;
 }
 .hdr3 {
   padding-left: 300px;
@@ -64,13 +74,7 @@ h5.menuButton {
   color: #fff;
   margin: 0 20px;
 }
-.hdrInner {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  height: 100%;
-  width: 950px;
-}
+
 .hdrInnerA p {
   margin: 0 5px;
 }
