@@ -1,38 +1,394 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  width: 100vw;
+  overflow-y: scroll;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
+}
+.header {
+  padding: 0;
+  width: 100vw;
+}
+.hdr1 {
+  display: flex;
+  flex-direction: row;
+}
+.hdr2 {
+  display: flex;
+  flex-direction: row;
+  padding-left: 300px;
+  align-items: center;
+  height: 30px;
+  color: #5a0632;
+}
+.hdr3 {
+  padding-left: 300px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #5a0632;
+  height: 50px;
+}
+.rowify {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.rateArrow {
+  height: 18px;
+  width: 18px;
+  margin-left: 10px;
+}
+h2.companyName {
+  color: #fff;
+  margin: 0 20px;
+  font-weight: 350;
+}
+.slogan {
+  margin: 0 2px;
+}
+h4.slogan {
+  font-weight: 900;
+}
+.smenuButton {
+  margin: 0 10px;
+}
+.rateArrow {
+}
+h5.slogan {
+  font-weight: normal;
+}
+h5.menuButton {
+  color: #fff;
+  margin: 0 20px;
+}
+.hdrInner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+  width: 950px;
+}
+.hdrInnerA p {
+  margin: 0 5px;
+}
+.hdr2 .hdrInner {
+  justify-content: space-between;
+}
+.hdrInnerA {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 100%;
+}
+.hdr4 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 65px;
+  position: relative;
 }
 
-.App-link {
-  color: #61dafb;
+.logo {
+  height: 145px;
+  width: 145px;
+  position: absolute;
+  bottom: 0;
+  left: calc(300px - 145px);
+}
+.footer {
+  padding: 60px 20vw 30px;
+  background-color: #2f292c;
+  color: #fff;
+}
+.footerInner {
+  width: 60vw;
+}
+.footerIR {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+}
+.footerIR h3 {
+  margin: 0;
+  margin-bottom: 5%;
+  font-weight: 350;
+}
+.footerIR h6 {
+  margin: 0;
+  margin-bottom: 5%;
+  font-weight: 350;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.flogo {
+  width: 50%;
+}
+.footerInnerRow {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+}
+
+.sqBoxes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding: 0 20px;
+}
+.sqBoxes h6 {
+  margin: 0;
+}
+.sqBoxes h6.sqBoxesD {
+  margin: 0;
+  font-weight: 400;
+}
+.footerInnerDownRow > div {
+  display: flex;
+}
+.footerInnerDownRow > div > h6 {
+  margin: 0;
+  margin-right: 20px;
+  font-weight: 350;
+}
+.footerInnerDownRow > h6 {
+  margin: 0;
+  font-weight: 350;
+}
+.footerInnerDownRow {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 30px;
+}
+/* Body */
+.appBody {
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 10px;
+  width: 100vw;
+}
+.appSideBar {
+  z-index: 3;
+  width: 200px;
+  height: 600px;
+  background-color: #5a0632;
+  -moz-box-shadow: 5px 5px 5px #ccc;
+  -webkit-box-shadow: 5px 5px 5px #ccc;
+  box-shadow: 5px 5px 5px #ccc;
+}
+
+.profileSec {
+  padding: 10px 0;
+  color: #ffffff;
+}
+.profileSec div {
+  display: flex;
+  justify-content: center;
+}
+.profileSec h5 {
+  margin: 10px 0;
+}
+.userImage {
+  width: 80px;
+
+  border: #2f292c solid 4px;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.actionSec {
+  width: 200px;
+  padding: 10px 0;
+  background-color: #fff;
+}
+.actionSec .action {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.actionInn {
+  width: 170px;
+  display: flex;
+  align-items: center;
+}
+.actionInn > .sideIcon {
+  margin: 10px 0;
+  margin-right: 15px;
+}
+.actionInn > h5 {
+  margin: 0;
+}
+
+.helpSec {
+  width: 200px;
+  padding: 20px 15px;
+  color: #fff;
+}
+.helpSecHelp,
+.helpSeclogout {
+  width: 170px;
+  display: flex;
+  align-items: center;
+}
+.helpSeclogout {
+  color: #dea349;
+}
+.helpSecHelp > .sideIcon,
+.helpSeclogout > .sideIcon {
+  margin: 5px 0;
+  margin-right: 15px;
+}
+.helpSecHelp > h5,
+.helpSeclogout > h5 {
+  margin: 0;
+}
+/* ----- */
+.appRightBody {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+.appRightInner {
+  width: 1000px;
+}
+.appRightBar {
+  overflow: hidden;
+  height: 45px;
+  position: relative;
+}
+.appRightBarLeft {
+  position: absolute;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  left: -10px;
+  padding: 0 30px 0 20px;
+  height: 40px;
+  -webkit-box-shadow: 8px 2px 11px -6px rgba(0, 0, 0, 0.52);
+  -moz-box-shadow: 8px 2px 11px -6px rgba(0, 0, 0, 0.52);
+  box-shadow: 8px 2px 11px -6px rgba(0, 0, 0, 0.52);
+  background-color: #5a0632;
+  -webkit-transform: skew(20deg);
+  -moz-transform: skew(20deg);
+  -o-transform: skew(20deg);
+}
+.appRightBarLeft h6 {
+  font-weight: 350;
+  display: block; /* block or inline-block is needed */
+  text-decoration: none;
+  transform: skew(-20deg); /* UNSKEW */
+  color: #fff;
+  margin: 0;
+}
+.appRightBar h1 {
+  margin: 0%;
+  margin-left: 200px;
+  color: #5a0632;
+}
+.appRightInnerBody {
+  height: 45px;
+  background-color: #5a0632;
+}
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th {
+  text-align: center;
+  padding: 0;
+  height: 45px;
+}
+td {
+  text-align: left;
+  padding: 0;
+}
+tr.heading {
+  background-color: #5a0632;
+  color: #fff;
+}
+.roomDetail {
+  width: 200px;
+}
+.roomDetail h2 {
+  color: #5a0632;
+  margin: 0;
+}
+
+.roomDetail2 {
+  width: 80px;
+  text-align: center;
+  font-weight: bold;
+}
+.roomDetail h5 {
+  margin: 0;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.rowify {
+  width: 150px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.rowify img {
+  width: 45px;
+}
+.rowify button {
+  border-radius: 4px;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 2px 0px;
+  width: 50px;
+  margin: 3px 0;
+  background-color: transparent;
+}
+.rowifyB1 {
+  border: #dea349 solid 1px;
+}
+.rowifyB2 {
+  border: #003242 solid 1px;
+}
+.rowifyB3 {
+  border: #5a0632 solid 1px;
+}
+.roomDetail h6 {
+  margin: 0;
+  font-weight: 400;
+}
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+.roomImg {
+  width: 202px;
+}
+.lastColumn button {
+  font-size: 12px;
+  width: 80px;
+  padding: 6px 0;
+  margin: 3px 0;
+}
+.b1 {
+  background-color: transparent;
+  border: #5a0632 solid 1px;
+  color: #5a0632;
+}
+
+.b2 {
+  background-color: #ca4335;
+  border: #ca4335 solid 1px;
+  color: #fff;
+}
+.b3 {
+  background-color: #5a0632;
+  border: #5a0632 solid 1px;
+  color: #fff;
 }
